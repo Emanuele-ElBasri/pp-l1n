@@ -1084,8 +1084,7 @@
                 'AMBITO 2',
                 'AMBITO 3',
                 'AMBITO 4',
-                'MEDIA',
-                'NOTE'
+                'MEDIA'
             ];
             
             // Intestazione ambiti specifici
@@ -1167,12 +1166,6 @@
                     // Media
                     const media = document.getElementById(`media-${studentId}`)?.textContent || '-';
                     studentRow.push(media);
-                    
-                    // Note
-                    const note = document.getElementById(`note-${studentId}`)?.value || '';
-                    studentRow.push(note);
-                    
-                    data.push(studentRow);
                 }
             });
             
